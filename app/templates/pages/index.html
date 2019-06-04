@@ -1,0 +1,109 @@
+		<!-- Banner -->
+		<section id="banner">
+			<div class="inner">
+				<div class="logo"><span class="icon fa-diamond"></span></div>
+				<h2>Flask Solid State</h2>
+
+				<p>
+					{% if current_user.is_authenticated %}
+						You are <strong>authenticated</strong>, <a href={{ url_for('logout') }}>Logout</a> 
+					{% else %}
+						You are <strong>NOT authenticated</strong>, please <a href={{ url_for('login') }}>Login</a>  
+					{% endif %}
+				</p>
+
+			</div>
+		</section>
+
+		<!-- Wrapper -->
+		<section id="wrapper">
+
+			<!-- One -->
+			<section id="one" class="wrapper spotlight style1">
+				<div class="inner">
+					<a href="#" class="image"><img src="/static/images/pic01.jpg" alt="" /></a>
+					<div class="content">
+						<h2 class="major">Open-Source</h2>
+						<p>
+						Open-Source app, designed by HTML5 Up, coded in <a href="http://flask.pocoo.org/">Flask</a> Microframework. 
+						<br />Features: Login, Registration, SQLite database, SQLAlchemy ORM, Static export
+						</p>
+						<a href="https://github.com/app-generator/flask-solid-state" class="special">Get Sources</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Two -->
+				<section id="two" class="wrapper alt spotlight style2">
+					<div class="inner">
+						<a href="#" class="image"><img src="/static/images/pic02.jpg" alt="" /></a>
+						<div class="content">
+							<h2 class="major">Coded in Flask</h2>
+							<p>
+							Flask is a Python web framework built with a small core and easy-to-extend philosophy. 
+							Flask is also easy to get started with as a beginner because there is little boilerplate code for getting a simple app up and running.
+							</p>
+							<a href="http://flask.pocoo.org/" class="special">Flask Microframework</a>
+						</div>
+					</div>
+				</section>
+
+			<!-- Three -->
+				<section id="three" class="wrapper spotlight style3">
+					<div class="inner">
+						<a href="#" class="image"><img src="/static/images/pic03.jpg" alt="" /></a>
+						<div class="content">
+							<h2 class="major">Coded by AppSeed</h2>
+							<p>
+							Get more <a href="https://appseed.us/apps/flask-apps">Flask</a>, 
+							JAMstack, <a href="https://appseed.us/apps/react">React</a>, 
+							<a href="https://appseed.us/apps/vuejs">Vue apps</a>. 
+							Most of them are free and open-source. 
+							</p>
+							<a href="https://appseed.us" class="special">Learn more</a>
+						</div>
+					</div>
+				</section>
+
+			<!-- Four -->
+			<section id="four" class="wrapper alt style1">
+				<div class="inner">
+					<h2 class="major">Vitae phasellus</h2>
+					<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+					<section class="features">
+						<article>
+							<a href="#" class="image"><img src="/static/images/pic04.jpg" alt="" /></a>
+							<h3 class="major">Sed feugiat lorem</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+							<a href="#" class="special">Learn more</a>
+						</article>
+						<article>
+							<a href="#" class="image"><img src="/static/images/pic05.jpg" alt="" /></a>
+							<h3 class="major">Nisl placerat</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+							<a href="#" class="special">Learn more</a>
+						</article>
+						<article>
+							<a href="#" class="image"><img src="/static/images/pic06.jpg" alt="" /></a>
+							<h3 class="major">Ante fermentum</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+							<a href="#" class="special">Learn more</a>
+						</article>
+						<article>
+							<a href="#" class="image"><img src="/static/images/pic07.jpg" alt="" /></a>
+							<h3 class="major">Fusce consequat</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+							<a href="#" class="special">Learn more</a>
+						</article>
+					</section>
+					<ul class="actions">
+						<li><a href="#" class="button">Browse All</a></li>
+					</ul>
+				</div>
+			</section>
+
+		</section>
+
+		<!-- Footer -->
+		{% include 'includes/contact.html' %}
+

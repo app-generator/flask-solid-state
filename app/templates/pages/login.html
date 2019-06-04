@@ -1,0 +1,72 @@
+
+
+	<!-- Wrapper -->
+		<section id="wrapper">
+			<header>
+				<div class="inner">
+					<h2>Login</h2>
+					<p>Phasellus non pulvinar erat. Fusce tincidunt nisl eget ipsum.</p>
+				</div>
+			</header>
+
+			<!-- Content -->
+				<div class="wrapper">
+					<div class="inner">
+
+						<section>
+							<h3 class="major">Login Form</h3>
+
+                            {% if msg %}
+                                <p>{{ msg | safe }}</p>
+                            {% else %}
+                                <p>Sign in with your credentials</p>
+                            {% endif %}
+
+                            <br />
+                            <form role="form" method="post" action="">
+
+                                {{ form.hidden_tag() }}
+                            
+								<div class="row gtr-uniform">
+
+									<div class="col-6 col-12-xsmall">
+										<label for="demo-name">Name</label>
+										{{ form.username(placeholder="Username") }}
+									</div>
+
+                                </div>
+                                <br />
+								<div class="row gtr-uniform">
+
+									<div class="col-6 col-12-xsmall">
+										<label for="demo-email">Password</label>
+										{{ form.password(placeholder="Password",class="form-control",type="password") }}
+									</div>
+
+                                </div>
+                                <br />
+								<div class="row gtr-uniform">
+
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Log in" class="primary" /></li>
+										</ul>
+									</div>
+									<div class="col-12">
+                                        <p>
+                                        No account? Please <a href={{ url_for('register') }}>register</a>
+                                        </p>
+									</div>
+
+								</div>
+
+							</form>
+						</section>
+
+					</div>
+				</div>
+
+		</section>
+
+		<!-- Footer -->
+		{% include 'includes/footer.html' %}
