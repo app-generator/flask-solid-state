@@ -76,6 +76,7 @@ def register():
     # try to match the pages defined in -> themes/light-bootstrap/pages/
     return render_template( 'layouts/default.html',
                             title=page_title,
+                            description=page_description,
                             content=render_template( 'pages/register.html', 
                                                      form=form,
                                                      msg=msg) )
@@ -117,6 +118,7 @@ def login():
     # try to match the pages defined in -> themes/light-bootstrap/pages/
     return render_template( 'layouts/default.html',
                             title=page_title,
+                            description=page_description,
                             content=render_template( 'pages/login.html', 
                                                      form=form,
                                                      msg=msg) )
@@ -126,11 +128,13 @@ def login():
 def elements():
 
     # custommize your page title / description here
-    page_title = 'Icons - Flask Solid State | AppSeed App Generator'
-    page_description = 'Open-Source Flask Solid State, the icons page.'
+    page_title = 'Design Elements - Flask Solid State | AppSeed App Generator'
+    page_description = 'Open-Source Flask Solid State, the design elements page.'
 
     # try to match the pages defined in -> pages/
     return render_template('layouts/default.html',
+                            title=page_title,
+                            description=page_description,
                             content=render_template( 'pages/elements.html') )
 
 # Used only for static export
@@ -138,11 +142,13 @@ def elements():
 def generic():
 
     # custommize your page title / description here
-    page_title = 'Icons - Flask Solid State | AppSeed App Generator'
-    page_description = 'Open-Source Flask Solid State, the icons page.'
+    page_title = 'Generic Page - Flask Solid State | AppSeed App Generator'
+    page_description = 'Open-Source Flask Solid State, the generic page, suitable for blogs.'
 
     # try to match the pages defined in -> pages/
     return render_template('layouts/default.html',
+                            title=page_title,
+                            description=page_description,
                             content=render_template( 'pages/generic.html') )
 
 # App main route + generic routing
@@ -150,12 +156,18 @@ def generic():
 @app.route('/<path>')
 def index(path):
 
+    # custommize your page title / description here
+    page_title = 'Flask Solid State - Open-Source App coded in Flask | AppSeed App Generator'
+    page_description = 'Open-Source web app starter coded in Flask Microfremwork, enhanced with authentication (login, logout), SQLite.'
+
     content = None
 
     try:
 
         # try to match the pages defined in -> themes/light-bootstrap/pages/
         return render_template('layouts/default.html',
+                                title=page_title,
+                                description=page_description,
                                 content=render_template( 'pages/'+path) )
     except:
         abort(404)
