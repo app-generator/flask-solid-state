@@ -7,8 +7,32 @@
 
   <!-- Main links -->
   <url>
-    <loc>https://flask-boilerplate.appseed.us</loc>
+    <loc>https://flask-solid-state.appseed.us/</loc>
     <priority>1</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://flask-solid-state.appseed.us/generic.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://flask-solid-state.appseed.us/elements.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://flask-solid-state.appseed.us/login.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://flask-solid-state.appseed.us/register.html</loc>
+    <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
 
