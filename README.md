@@ -43,9 +43,6 @@ Open-Source app with **HTML5Up Solid-State** design coded in **Flask**
  - Static Build `python ./static.py`. The static build goes to `app/build` directory 
  - FTP Deploy script. **Info**: this `require node.js` and the edit of `deploy.js` to add FTP server credentials. 
 
-## Support
-- For issues and features request, use [Github](https://github.com/app-generator/flask-solid-state/issues/new) or join [AppSeed](https://appseed.us?ref=light-dashboard-flask) community on [Discord](https://discord.gg/fZC6hup)   
-
 <br />
 
 ## App Screenshots
