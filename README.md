@@ -4,7 +4,7 @@ Open-Source app with **HTML5Up Solid-State** design coded in **Flask**
 
 <br />
 
-![Flask Solid-State - Gif animated intro.](https://github.com/app-generator/flask-solid-state/blob/master/screenshots/flask-solid-state-intro.gif)
+![Flask Solid-State - Gif animated intro.](https://raw.githubusercontent.com/app-generator/static/master/products/flask-boilerplate-solid-state-intro.gif)
 
 <br />
 
