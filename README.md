@@ -1,8 +1,13 @@
 # [Flask Solid-State](https://appseed.us/apps/flask-apps/flask-solid-state)
 
-Open-Source app with **HTML5Up Solid-State** design coded in **Flask**
+**Open-Source Web App** coded in **[Flask Framework](https://palletsprojects.com/p/flask/)** - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
 
-<br />
+### App Features:
+
+- SQLite database
+- SQLAlchemy ORM
+- Session-Based authentication flow (login, register)
+- UI Kit: Solid State by **Html5Up**
 
 <br />
 
@@ -86,5 +91,5 @@ For issues and features request, use **Github** or access the [support page](htt
 <br />
 
 ---
-[Flask Solid-State](https://appseed.us/apps/flask-apps/flask-solid-state) provided by **AppSeed**
+[Flask Solid-State](https://appseed.us/apps/flask-apps/flask-solid-state) - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
 
